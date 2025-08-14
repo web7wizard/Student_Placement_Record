@@ -102,3 +102,13 @@ The backend exposes the following RESTful endpoints:
 | `DELETE`| `/api/placements/{id}`| Delete a student placement by its ID.     |
 
 
+
+## 💡 Future Improvements
+
+This project has a solid foundation. Future enhancements could include:
+*   **User Authentication:** Implement JWT-based security with login/logout functionality.
+*   **Search & Filtering:** Add a search bar to the dashboard to find students by name or company.
+*   **Pagination:** For dashboards with hundreds of records, implement pagination to improve performance.
+*   **Advanced Sorting:** Allow users to sort the list by different columns (Name, Department, etc.).
+*   **Deployment:** Containerize the application using Docker and deploy it to a cloud service like AWS or Heroku
+
