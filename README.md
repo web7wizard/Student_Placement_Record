@@ -1,6 +1,9 @@
 # 🎓 Student Placement Management System
 
-A full-stack web application built with Angular and Spring Boot to manage student placement records. This system provides a clean, modern, and user-friendly interface for Creating, Reading, Updating, and Deleting (CRUD) placement data.
+A full-stack web application built with Angular and Spring Boot to manage student placement records. This system provides a clean, modern, and user-friendly interface for Creating, Reading, Updating, and Deleting (CRUD) placement data.This project is a Student Placement Management System built using Spring Boot (REST API), PostgreSQL, and Angular.
+It allows students to upload their details, and administrators/teachers to manage placement records efficiently.
+The project demonstrates full-stack development with a backend powered by Spring Boot + PostgreSQL and a responsive frontend built using Angular.
+It is designed to provide a seamless experience for both students and administrators to track and manage placement-related data.
 
 
 ## 💡 Idea behind this project
@@ -37,7 +40,7 @@ The core idea was to build a solution that would:
 ### Frontend
 *   **Angular 18**
 *   **TypeScript**
-*   **HTML5 & CSS3**
+*   **HTML & CSS**
 *   **Bootstrap 5** (for the grid system)
 *   **Font Awesome** (for icons)
 
