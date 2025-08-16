@@ -51,7 +51,21 @@ Before you begin, ensure you have the following installed on your system:
 *   **Angular CLI** - `npm install -g @angular/cli`
 
 
+## 📂 Project Structure
 
+    placement-management-system/
+      │
+      ├── backend/ (Spring Boot)
+      │   ├── src/main/java/...  # Controllers, Services, Entities, Repositories
+      │   ├── src/main/resources/application.properties
+      │   └── pom.xml
+      │
+      ├── frontend/ (Angular App)
+      │   ├── src/app/           # Components, Services
+      │   ├── src/assets/
+      │   └── angular.json
+      │
+      └── README.md
 
 ## 🚀 Getting Started
 
