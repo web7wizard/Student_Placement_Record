@@ -1,0 +1,63 @@
+<!-- src/app/components/employee-form/employee-form.component.html -->
+
+<div class="form-page-container">
+  <div class="form-card">
+    
+    <div class="form-header">
+      <h1>
+        <i class="fas" [ngClass]="isEditMode ? 'fa-pencil-alt' : 'fa-plus-circle'"></i>
+        {{ isEditMode ? 'Edit Student Placement' : 'Add Student Placement' }}
+      </h1>
+    </div>
+
+    <div class="form-body">
+      <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()" class="row g-4" id="placementForm">
+        
+        <!-- === THIS IS THE UPDATED SECTION === -->
+
+        <!-- Student Name Field with Icon -->
+        <div class="col-md-6">
+          <label for="name" class="form-label">
+            <i class="fas fa-user"></i> Student Name
+          </label>
+          <input id="name" formControlName="name" type="text" class="form-control">
+        </div>
+
+        <!-- Department Field with Icon -->
+        <div class="col-md-6">
+          <label for="department" class="form-label">
+            <i class="fas fa-sitemap"></i> Department
+          </label>
+          <input id="department" formControlName="department" type="text" class="form-control">
+        </div>
+
+        <!-- Company Field with Icon -->
+        <div class="col-md-6">
+          <label for="company" class="form-label">
+            <i class="fas fa-building"></i> Company
+          </label>
+          <input id="company" formControlName="company" type="text" class="form-control">
+        </div>
+
+        <!-- LPA Field with Icon -->
+        <div class="col-md-6">
+          <label for="lpa" class="form-label">
+            <i class="fas fa-coins"></i> Package (LPA)
+          </label>
+          <input id="lpa" formControlName="lpa" type="number" class="form-control">
+        </div>
+
+        <!-- === END OF UPDATE === -->
+
+      </form>
+    </div>
+
+    <div class="form-footer">
+      <a routerLink="/" class="btn btn-cancel">Cancel</a>
+      <button type="submit" [disabled]="employeeForm.invalid" class="btn btn-submit" form="placementForm">
+        {{ isEditMode ? 'Update Record' : 'Create Record' }}
+      </button>
+    </div>
+
+  </div>
+</div>

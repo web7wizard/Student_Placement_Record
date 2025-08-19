@@ -1,0 +1,53 @@
+<!-- src/app/components/employee-detail/employee-detail.component.html -->
+
+<div class="detail-page-container" *ngIf="placement">
+  <div class="detail-card">
+    <div class="profile-header">
+      <div class="profile-icon">
+        <i class="fas fa-user-graduate"></i>
+      </div>
+      <div class="profile-name-section">
+        <h1>{{ placement.name }}</h1>
+        <p class="company-name">
+          <i class="fas fa-building"></i> {{ placement.company }}
+        </p>
+      </div>
+    </div>
+    
+    <div class="card-body">
+      <div class="details-grid">
+        <div class="detail-item">
+          <i class="fas fa-sitemap detail-icon"></i>
+          <div class="detail-info">
+            <span class="label">Department</span>
+            <span class="value">{{ placement.department }}</span>
+          </div>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-coins detail-icon"></i>
+          <div class="detail-info">
+            <span class="label">Package</span>
+            <span class="value">{{ placement.lpa }} LPA</span>
+          </div>
+        </div>
+        <!-- This section correctly displays the rank -->
+        <div class="detail-item">
+          <i class="fas fa-trophy detail-icon"></i>
+          <div class="detail-info">
+            <span class="label">Rank</span>
+            <span class="value">#{{ rank }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card-footer">
+      <a routerLink="/" class="action-btn back">
+        <i class="fas fa-arrow-left"></i> Back to Dashboard
+      </a>
+      <a routerLink="/edit/{{ placement.id }}" class="action-btn edit">
+        <i class="fas fa-pencil-alt"></i> Edit
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<!-- src/app/components/employee-list/employee-list.component.html -->
+
+<header class="main-header">
+  <h1>
+    <i class="fas fa-user-graduate"></i> Student Placement Dashboard
+  </h1>
+  <a routerLink="/create" class="add-button">Add New Placement</a>
+</header>
+
+<main>
+  <!-- This container is now a 'student-list' instead of a 'grid' -->
+  <div class="student-list">
+    <!-- The *ngFor loop now creates a full-width row for each placement -->
+    <div class="list-row" *ngFor="let placement of placements">
+      
+      <!-- Each piece of data is now its own item in the row -->
+      <div class="info-item name">{{ placement.name }}</div>
+      <div class="info-item department">
+        <span class="label">Dept:</span> {{ placement.department }}
+      </div>
+      <div class="info-item company">
+        <span class="label">Company:</span> {{ placement.company }}
+      </div>
+      <div class="info-item lpa-badge">{{ placement.lpa }} LPA</div>
+      
+      <!-- The actions are the last item in the row -->
+      <div class="card-actions">
+        <a routerLink="/details/{{ placement.id }}" class="action-btn view" title="View">
+          <i class="fas fa-eye"></i>
+        </a>
+        <a routerLink="/edit/{{ placement.id }}" class="action-btn edit" title="Edit">
+          <i class="fas fa-pencil-alt"></i>
+        </a>
+        <button (click)="deletePlacement(placement.id!)" class="action-btn delete" title="Delete">
+          <i class="fas fa-trash-alt"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</main>

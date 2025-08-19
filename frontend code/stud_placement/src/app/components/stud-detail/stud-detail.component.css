@@ -1,0 +1,116 @@
+/* src/app/components/employee-detail/employee-detail.component.css */
+
+/* Main container for the page to center the card */
+.detail-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+}
+
+/* The main card that holds all the information */
+.detail-card {
+    width: 100%;
+    max-width: 700px;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 8px 30px var(--shadow-color);
+    overflow: hidden; /* Ensures the rounded corners apply to children */
+}
+
+/* The header section of the card */
+.card-header {
+    background-color: #f8f9fa;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.card-header h1 {
+    margin: 0;
+    color: var(--primary-color);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.lpa-badge {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--success-color);
+    background-color: #e9f5ec;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+/* The main body of the card where details are listed */
+.card-body {
+    padding: 30px;
+}
+
+/* Each row of detail (icon + label + value) */
+.detail-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px; /* Space between each detail row */
+}
+
+.detail-icon {
+    font-size: 22px;
+    color: var(--primary-color);
+    width: 40px; /* Fixed width for alignment */
+    text-align: center;
+    margin-right: 20px;
+}
+
+.detail-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-info .label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #6c757d; /* A muted grey for the label */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.detail-info .value {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+/* The footer section for the buttons */
+.card-footer {
+    background-color: #f8f9fa;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: flex-end; /* Pushes buttons to the right */
+    gap: 15px;
+    border-top: 1px solid #e9ecef;
+}
+
+/* General style for the action buttons */
+.action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text in button */
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Specific colors for each button */
+.action-btn.edit { background-color: var(--warning-color); color: #212529;}
+.action-btn.back { background-color: #6c757d; }

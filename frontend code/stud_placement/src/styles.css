@@ -1,0 +1,26 @@
+/* src/styles.css */
+
+/* Define the color palette and fonts for the whole application */
+:root {
+    --primary-color: #007BFF;
+    --secondary-color: #f4f7fc; /* A slightly softer background */
+    --text-color: #343A40;
+    --card-bg: #FFFFFF;
+    --shadow-color: rgba(0, 0, 0, 0.08);
+    --success-color: #28A745;
+    --danger-color: #DC3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+}
+
+/* Apply global font and background */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+}
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
