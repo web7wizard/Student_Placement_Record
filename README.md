@@ -2,7 +2,9 @@
 
 A full-stack web application built with Angular and Spring Boot to manage student placement records. This system provides a clean, modern, and user-friendly interface for Creating, Reading, Updating, and Deleting (CRUD) placement data.
 A **Spring Boot + PostgreSQL + HTML/CSS/JS** project to manage student placement records.  This project was built as a **final project** to demonstrate full-stack development skills.
-this is simple and student friendly project , it has clear ui so student-teacher can use it clearly.
+this is simple and friendly project.
+
+
 
 ## ✨ Key Features
 
@@ -169,6 +171,12 @@ The backend exposes the following RESTful endpoints:
 <img width="1901" height="927" alt="image" src="https://github.com/user-attachments/assets/e8d6c73a-1f8a-4cc2-b286-f95c2795ef49" />
 
 
+## 🎨 Design Philosophy
+This project follows a **minimal and clean design approach**:
+- Simple layout with **limited colors** for a professional look  
+- No flashy animations or distracting effects  
+- Focus on **readability and usability**  
+- Suitable for academic/college-level projects  
 
 
 
