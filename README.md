@@ -2,6 +2,7 @@
 
 A full-stack web application built with Angular and Spring Boot to manage student placement records. This system provides a clean, modern, and user-friendly interface for Creating, Reading, Updating, and Deleting (CRUD) placement data.
 A **Spring Boot + PostgreSQL + HTML/CSS/JS** project to manage student placement records.  This project was built as a **final project** to demonstrate full-stack development skills.
+this is simple and student friendly project , it has clear ui so student-teacher can use it clearly.
 
 ## ✨ Key Features
 
@@ -138,6 +139,40 @@ The backend exposes the following RESTful endpoints:
 | `DELETE`| `/api/placements/{id}`| Delete a student placement by its ID.    |
 
 
+## output screenshot
+
+- backend server running
+<img width="1918" height="1022" alt="image" src="https://github.com/user-attachments/assets/c7f485fd-056a-4456-8a9f-763d3308ec19" />
+
+- frontend server running "ng serve"
+<img width="1918" height="1018" alt="image" src="https://github.com/user-attachments/assets/3ea467e6-2b5a-4930-ad82-38ac5c8fab77" />
+
+- all is running now output
+- splash screen
+<img width="1918" height="1017" alt="image" src="https://github.com/user-attachments/assets/2d1e90e2-7efc-4662-9a06-f5522284bb3f" />
+
+- main page leader board
+<img width="1896" height="1020" alt="image" src="https://github.com/user-attachments/assets/8aedf586-4931-4e62-83ea-f020090681d1" />
+
+- add placement student button
+
+<img width="1918" height="1020" alt="image" src="https://github.com/user-attachments/assets/de11d4da-7591-4837-a9dd-37a5ed69acd3" />
+
+- view placement of student button working
+<img width="1918" height="1016" alt="image" src="https://github.com/user-attachments/assets/b1a36867-411f-43af-90a8-88f29a471a5c" />
+
+- edit placement button working
+<img width="1918" height="1017" alt="image" src="https://github.com/user-attachments/assets/2dcad62f-5f00-4587-a753-06fe14d5d1fb" />
+
+- delete button
+
+<img width="1901" height="927" alt="image" src="https://github.com/user-attachments/assets/e8d6c73a-1f8a-4cc2-b286-f95c2795ef49" />
+
+
+
+
+
+
 
 ## 💡 Future Improvements
 
@@ -149,3 +184,15 @@ This project has a solid foundation. Future enhancements could include:
 *   **Deployment:** Containerize the application using Docker and deploy it to a cloud service like AWS or Heroku.
 
 
+
+# 🤝 Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+             
+# 👩‍💻 Author                   
+-  Name : javeriya jamadar
+-  college             -  sesp 
+- 📧 emil account     -  javeriyajamadar7@gmail.com
+- 🔗 GitHub Profile   -  web7wizard 
+
+#### Proudly developed as part of a journey in learning and building real-world Java applications. 🎓💻
